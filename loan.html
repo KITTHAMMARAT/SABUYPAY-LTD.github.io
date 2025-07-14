@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>สินเชื่อ - สบายเพย์ จำกัด</title>
+<!-- เชื่อม Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet" />
+<style>
+  /* CSS โทนสีน้ำเงิน */
+  body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* สีพื้นหลังอ่อน */
+    color: #333;
+  }
+
+  /* หัวเว็บ */
+  header {
+    background-color: #003366; /* สีน้ำเงินเข้ม */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: #ffffff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: #66ccff; /* สีรองเมื่อ hover */
+    text-decoration: underline;
+  }
+
+  /* ส่วนหัวข้อหลัก */
+.section-hero {
+  background: linear-gradient(135deg, #0066cc, #3399ff);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* รายละเอียดสินเชื่อ */
+.products-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f0f4f8;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  color: #003366;
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* ปุ่ม */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #004999;
+}
+
+/* สมัครสินเชื่อ ฟอร์ม */
+.application-section {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.application-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #003366;
+}
+
+input, select {
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 14px;
+}
+
+button.submit-btn {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+  background-color: #001f3f;
+}
+
+/* ส่วนข้อมูลติดต่อ */
+.contact-section {
+  background-color: #f0f4f8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* ส่วนท้าย */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>บริษัท สบายเพย์ จำกัด</h1>
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับเรา</a>
+    <a href="loan.html" class="active">สินเชื่อ</a>
+    <a href="contact.html">ติดต่อเรา</a>
+  </nav>
+</header>
+
+<!-- ส่วนหัวใหญ่ -->
+<section class="section-hero">
+  <h2>สินเชื่อสำหรับธุรกิจของคุณ</h2>
+  <p>เรามีผลิตภัณฑ์สินเชื่อที่หลากหลาย ตอบโจทย์ทุกความต้องการของธุรกิจคุณ พร้อมอัตราดอกเบี้ยต่ำและบริการเป็นเลิศ</p>
+</section>
+
+<!-- รายละเอียดสินเชื่อ -->
+<section class="products-section">
+  <div class="card">
+    <h3>สินเชื่อหมุนเวียน</h3>
+    <p>วงเงินหมุนเวียนที่สามารถใช้จ่ายได้ตามความต้องการของธุรกิจ พร้อมอัตราดอกเบี้ยต่ำและเงื่อนไขยืดหยุ่น</p>
+    <a class="btn" href="#">ดูเพิ่มเติม</a>
+  </div>
+  <div class="card">
+    <h3>สินเชื่อเพื่อการลงทุน</h3>
+    <p>สนับสนุนการขยายธุรกิจด้วยเงินกู้เพื่อการลงทุน ปลอดภัยและรวดเร็ว พร้อมคำปรึกษาจากผู้เชี่ยวชาญ</p>
+    <a class="btn" href="#">ดูเพิ่มเติม</a>
+  </div>
+  <div class="card">
+    <h3>สินเชื่อส่วนบุคคลเพื่อธุรกิจ</h3>
+    <p>ปลอดภัย รวดเร็ว พร้อมให้คำปรึกษาและบริการเป็นมิตร เพื่อความสำเร็จของธุรกิจคุณ</p>
+    <a class="btn" href="#">ดูเพิ่มเติม</a>
+  </div>
+</section>
+
+<!-- แบบฟอร์มสมัครสินเชื่อ -->
+<section class="application-section">
+  <h2>สมัครสินเชื่อกับเรา</h2>
+  <form>
+    <label for="name">ชื่อ-นามสกุล</label>
+    <input type="text" id="name" name="name" placeholder="กรอกชื่อ-นามสกุล" required />
+
+    <label for="phone">เบอร์โทรศัพท์</label>
+    <input type="tel" id="phone" name="phone" placeholder="กรอกเบอร์โทรศัพท์" required />
+
+    <label for="amount">จำนวนเงินที่ต้องการ</label>
+    <input type="number" id="amount" name="amount" placeholder="เช่น 50000" required />
+
+    <label for="loan-type">ประเภทสินเชื่อ</label>
+    <select id="loan-type" name="loan-type" required>
+      <option value="">เลือกประเภทสินเชื่อ</option>
+      <option value="working-capital">สินเชื่อหมุนเวียน</option>
+      <option value="investment">สินเชื่อเพื่อการลงทุน</option>
+      <option value="personal">สินเชื่อส่วนบุคคล</option>
+    </select>
+
+    <button type="submit" class="submit-btn">ส่งคำขอสินเชื่อ</button>
+  </form>
+</section>
+
+<!-- ข้อมูลติดต่อ -->
+<section class="contact-section">
+  <h2>ติดต่อเรา</h2>
+  <p>โทรศัพท์: 02-123-4567</p>
+  <p>อีเมล: sabuypay.th@gmail.com</p>
+  <p>ที่อยู่: 3455 อาคารทีทีซี พาร์ค ทาวเวอร์ ชั้นที่ 2 ถนนพระราม 9 แขวงพัฒนาการ เขตสวนหลวง กรุงเทพมหานคร 10250</p>
+</section>
+
+<!-- ส่วนท้าย -->
+<footer>
+  &copy; 2025 สบายเพย์ จำกัด. สงวนลิขสิทธิ์
+</footer>
+
+</body>
+</html>

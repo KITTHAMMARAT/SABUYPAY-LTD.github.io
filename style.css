@@ -1,0 +1,380 @@
+/* โครงสร้างพื้นฐาน */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* ส่วนหัว header */
+.header {
+  background-color: #003366;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  color: #fff;
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* ส่วนเนื้อหา main */
+.main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ส่วน hero สำหรับหน้าแรก */
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #003366;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #003366;
+}
+
+/* ส่วน footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+}
+
+/* สไตล์สำหรับส่วนโฆษณา */
+.ads-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.ads-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ads-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ad-item {
+  flex: 1 1 calc(25% - 20px); /* 4 รูปต่อแถว */
+  max-width: calc(25% - 20px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ad-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.ad-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* สำหรับหน้าจอเล็กลง ให้ปรับเป็น 2 รูปต่อแถว */
+@media(max-width: 768px) {
+  .ad-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* สไตล์สำหรับรูปปก */
+.cover-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cover-image img {
+  width: 1036px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* สำหรับหน้าจอเล็ก ให้ปรับขนาดอัตโนมัติ */
+@media(max-width: 1200px) {
+  .cover-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ปุ่ม LINE */
+.line-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #00c300;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px; /* ปรับตามต้องการ */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.line-btn:hover {
+  background-color: #0333d1;
+  transform: scale(1.05);
+}
+
+.line-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* ฟอนต์หลัก */
+body {
+  font-family: 'Sarabun', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* หัวเว็บ */
+.header {
+  background-color: #003366;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a.active,
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ส่วนหัวข้อหลัก */
+.loan-header {
+  background-color: #00c300;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.loan-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.loan-header p {
+  font-size: 18px;
+}
+
+/* รายละเอียดสินค้า */
+.loan-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #006400;
+}
+
+.btn-primary {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #006400;
+}
+
+/* แบบฟอร์มสมัคร */
+.application-form {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.application-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.btn-submit {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #007bff;
+}
+
+/* ข้อมูลติดต่อ */
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+/* ส่วนท้าย */
+.footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}

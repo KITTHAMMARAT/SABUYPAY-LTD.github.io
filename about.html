@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>เกี่ยวกับเรา - สบายเพย์ จำกัด</title>
+<!-- เชื่อม Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet" />
+<style>
+  /* CSS โทนสีน้ำเงินและตกแต่ง */
+  body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+
+  /* หัวเว็บ */
+  header {
+    background-color: #003366;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  nav a {
+    color: #ffffff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  nav a:hover,
+  nav a.active {
+    color: #66ccff;
+    text-decoration: underline;
+  }
+
+  /* ส่วนเนื้อหาเกี่ยวกับเรา */
+.section-about {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-about h2 {
+  text-align: center;
+  color: #003366;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* เนื้อหาเกี่ยวกับบริษัท */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ส่วนท้าย */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>บริษัท สบายเพย์ จำกัด</h1>
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html" class="active">เกี่ยวกับเรา</a>
+    <a href="loan.html">สินเชื่อ</a>
+    <a href="contact.html">ติดต่อเรา</a>
+  </nav>
+</header>
+
+<!-- เนื้อหาเกี่ยวกับเรา -->
+<section class="section-about">
+  <h2>เกี่ยวกับเรา</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>บริษัท สบายเพย์ จำกัด เป็นบริษัทชั้นนำด้านการให้บริการด้านสินเชื่อและทางการเงินที่มีความน่าเชื่อถือและเป็นมืออาชีพ ด้วยประสบการณ์มากกว่า 10 ปี เรามุ่งเน้นการให้บริการที่รวดเร็ว ปลอดภัย และเป็นกันเอง เพื่อสนับสนุนธุรกิจและลูกค้าของเราให้เติบโตอย่างมั่นคง</p>
+      <p>เรามีทีมงานที่มีความเชี่ยวชาญ พร้อมให้คำปรึกษาและแนะนำสินเชื่อที่เหมาะสมกับแต่ละธุรกิจและความต้องการของลูกค้าอย่างเป็นกันเองและโปร่งใส</p>
+      <p>เป้าหมายของเราคือการเป็นพันธมิตรทางธุรกิจที่ดีที่สุดสำหรับคุณ ด้วยบริการที่รวดเร็วและมีคุณภาพสูงสุด</p>
+    </div>
+    <div class="about-image">
+      <img src="images/ad7.jpg" alt="ทีมงานบริษัท">
+    </div>
+  </div>
+</section>
+
+<!-- ส่วนท้าย -->
+<footer>
+  &copy; 2025 สบายเพย์ จำกัด. สงวนลิขสิทธิ์
+</footer>
+
+</body>
+</html>
